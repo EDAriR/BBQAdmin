@@ -11,7 +11,7 @@ public interface Authority_FeatureDAO_interface {
 
     public void update(Authority_FeatureVO Authority_FeatureVO);
 
-    public void delete(String proc_no);
+    public void delete(String auth_no);
 
     public Authority_FeatureVO findByPrimaryKey(String auth_no);
 

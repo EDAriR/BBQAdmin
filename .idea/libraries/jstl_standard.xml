@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jstl-standard">
+    <CLASSES>
+      <root url="jar://C:/javalib/jstl-standard.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

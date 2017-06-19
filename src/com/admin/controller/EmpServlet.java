@@ -87,14 +87,14 @@ public class EmpServlet extends HttpServlet {
 		}
 		
 		
-		if ("getOne_For_Update".equals(action)) { // 來自listAllEmp.jsp 或  /dept/listEmps_ByDeptno.jsp 的請求
+		if ("getOne_For_Update".equals(action)) { // 來自listAllEmp.jsp 或  /dept/listAFs_ByAuth_No.jsp 的請求
 
 			List<String> errorMsgs = new LinkedList<String>();
 			// Store this set in the request scope, in case we need to
 			// send the ErrorPage view.
 			req.setAttribute("errorMsgs", errorMsgs);
 			
-			String requestURL = req.getParameter("requestURL"); // 送出修改的來源網頁路徑: 可能為【/emp/listAllEmp.jsp】 或  【/dept/listEmps_ByDeptno.jsp】 或 【 /dept/listAllDept.jsp】		
+			String requestURL = req.getParameter("requestURL"); // 送出修改的來源網頁路徑: 可能為【/emp/listAllEmp.jsp】 或  【/dept/listAFs_ByAuth_No.jsp】 或 【 /dept/listAllAF.jsp】
 			
 			try {
 				/***************************1.接收請求參數****************************************/
@@ -127,7 +127,7 @@ public class EmpServlet extends HttpServlet {
 			// send the ErrorPage view.
 			req.setAttribute("errorMsgs", errorMsgs);
 			
-			String requestURL = req.getParameter("requestURL"); // 送出修改的來源網頁路徑: 可能為【/emp/listAllEmp.jsp】 或  【/dept/listEmps_ByDeptno.jsp】 或 【 /dept/listAllDept.jsp】 或 【 /emp/listEmps_ByCompositeQuery.jsp】
+			String requestURL = req.getParameter("requestURL"); // 送出修改的來源網頁路徑: 可能為【/emp/listAllEmp.jsp】 或  【/dept/listAFs_ByAuth_No.jsp】 或 【 /dept/listAllAF.jsp】 或 【 /emp/listEmps_ByCompositeQuery.jsp】
 		
 			try {
 				/***************************1.接收請求參數 - 輸入格式的錯誤處理**********************/
@@ -185,7 +185,7 @@ public class EmpServlet extends HttpServlet {
 				
 				/***************************3.修改完成,準備轉交(Send the Success view)*************/				
 				DeptService deptSvc = new DeptService();
-				if(requestURL.equals("/dept/listEmps_ByDeptno.jsp") || requestURL.equals("/dept/listAllDept.jsp"))
+				if(requestURL.equals("/dept/listAFs_ByAuth_No.jsp") || requestURL.equals("/dept/listAllAF.jsp"))
 					req.setAttribute("listEmps_ByDeptno",deptSvc.getEmpsByDeptno(deptno)); // 資料庫取出的list物件,存入request
 				
 				if(requestURL.equals("/emp/listEmps_ByCompositeQuery.jsp")){
@@ -289,7 +289,7 @@ public class EmpServlet extends HttpServlet {
 			// send the ErrorPage view.
 			req.setAttribute("errorMsgs", errorMsgs);
 			
-			String requestURL = req.getParameter("requestURL"); // 送出刪除的來源網頁路徑: 可能為【/emp/listAllEmp.jsp】 或  【/dept/listEmps_ByDeptno.jsp】 或 【 /dept/listAllDept.jsp】 或 【 /emp/listEmps_ByCompositeQuery.jsp】
+			String requestURL = req.getParameter("requestURL"); // 送出刪除的來源網頁路徑: 可能為【/emp/listAllEmp.jsp】 或  【/dept/listAFs_ByAuth_No.jsp】 或 【 /dept/listAllAF.jsp】 或 【 /emp/listEmps_ByCompositeQuery.jsp】
 
 			try {
 				/***************************1.接收請求參數***************************************/
@@ -302,7 +302,7 @@ public class EmpServlet extends HttpServlet {
 				
 				/***************************3.刪除完成,準備轉交(Send the Success view)***********/
 				DeptService deptSvc = new DeptService();
-				if(requestURL.equals("/dept/listEmps_ByDeptno.jsp") || requestURL.equals("/dept/listAllDept.jsp"))
+				if(requestURL.equals("/dept/listAFs_ByAuth_No.jsp") || requestURL.equals("/dept/listAllAF.jsp"))
 					req.setAttribute("listEmps_ByDeptno",deptSvc.getEmpsByDeptno(empVO.getDeptno())); // 資料庫取出的list物件,存入request
 				
 				if(requestURL.equals("/emp/listEmps_ByCompositeQuery.jsp")){
