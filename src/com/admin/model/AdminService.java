@@ -11,14 +11,12 @@ public class AdminService {
         dao = new AdminDAO();
     }
 
-    public AdminVO addChat_Friend(String adm_no, String adm_acct,
-                                  String adm_pwd, String adm_name,
-                                  String adm_mail) {
+    public AdminVO addChat_Friend(String adm_acct, String adm_pwd,
+                                  String adm_name, String adm_mail) {
 
         AdminVO adminVO = new AdminVO();
 
-//       adm_no, adm_acct, adm_pwd, adm_name,adm_mail
-        adminVO.setAdm_no(adm_no);
+//      adm_no, adm_acct, adm_pwd, adm_name,adm_mail
         adminVO.setAdm_acct(adm_acct);
         adminVO.setAdm_pwd(adm_pwd);
         adminVO.setAdm_name(adm_name);
@@ -34,18 +32,15 @@ public class AdminService {
 
         AdminVO adminVO = new AdminVO();
 
-        adminVO.setAdm_no(adm_no);
         adminVO.setAdm_acct(adm_acct);
         adminVO.setAdm_pwd(adm_pwd);
         adminVO.setAdm_name(adm_name);
         adminVO.setAdm_mail(adm_mail);
+        adminVO.setAdm_no(adm_no);
+
         dao.update(adminVO);
 
         return adminVO;
-    }
-
-    public void deleteAD(String adm_no) {
-        dao.delete(adm_no);
     }
 
     public AdminVO getOneAD(String adm_no) {

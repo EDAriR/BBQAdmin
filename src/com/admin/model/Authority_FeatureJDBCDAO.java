@@ -1,30 +1,29 @@
-package com.admin.JDBCDAO;
-
-import com.admin.model.Admin_AuthorityDAO_interface;
-import com.admin.model.Admin_AuthorityVO;
+package com.admin.model;
 
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class Admin_AuthorityJDBCDAO implements Admin_AuthorityDAO_interface {
-    private static final String DRIVER = "oracle.jdbc.driver.OracleDriver";
-    private static final String URL = "jdbc:oracle:thin:@localhost:1522:xe";
-    //    private static final String URL = "jdbc:oracle:thin:@localhost:1521:xe";
+public class Authority_FeatureJDBCDAO implements Authority_FeatureDAO_interface {
+	private static final String DRIVER = "oracle.jdbc.driver.OracleDriver";
+    private static final String URL = "jdbc:oracle:thin:@localhost:1521:xe";
     private static final String USER = "ba101g3";
     private static final String PASSWORD = "baby";
     // 新增資料
-    private static final String INSERT_STMT = "INSERT INTO admin_authority (adm_no, auth_no) VALUES (?, ?)";
+    private static final String INSERT_STMT = "INSERT INTO authority_feature (auth_no, auth_name) " +
+            "VALUES ('AF'||LPAD(TO_CHAR(auth_no_seq.NEXTVAL),2,'0'), ?)";
     // 查詢資料
-    private static final String GET_ALL_STMT = "SELECT adm_no , auth_no FROM admin_authority";
-    private static final String GET_ONE_STMT = "SELECT adm_no, auth_no FROM admin_authority WHERE adm_no = ?";
-    // 刪除資料
-    private static final String DELETE_PROC = "DELETE FROM admin_authority WHERE auth_no = ? AND adm_no = ?";
+    private static final String GET_ALL_STMT = "SELECT * FROM authority_feature";
+    private static final String GET_ONE_STMT = "SELECT * FROM authority_feature " +
+            "WHERE auth_no = ?";
+    // 修改資料
+    private static final String UPDATE = "UPDATE authority_feature SET auth_name=? WHERE auth_no = ?";
 
 
     @Override
-    public void insert(Admin_AuthorityVO admin_AuthorityVO) {
+    public void insert(Authority_FeatureVO authority_FeatureVO) {
+
         Connection con = null;
         PreparedStatement pstmt = null;
 
@@ -32,10 +31,10 @@ public class Admin_AuthorityJDBCDAO implements Admin_AuthorityDAO_interface {
 
             Class.forName(DRIVER);
             con = DriverManager.getConnection(URL, USER, PASSWORD);
-
-            pstmt = con.prepareStatement(INSERT_STMT);
-            pstmt.setString(1, admin_AuthorityVO.getAdm_no());
-            pstmt.setString(2, admin_AuthorityVO.getAuth_no());
+            String[] seq = {"auth_no"}; // 有使用sequence產生編號的話才要寫
+            pstmt = con.prepareStatement(INSERT_STMT, seq); // 有使用sequence產生編號的話才要寫第二個參數
+            
+            pstmt.setString(1, authority_FeatureVO.getAuth_name());
             pstmt.executeUpdate();
 
             // Handle any DRIVER errors
@@ -68,9 +67,7 @@ public class Admin_AuthorityJDBCDAO implements Admin_AuthorityDAO_interface {
     }
 
     @Override
-    public void delete(String adm_no,String auth_no){
-
-        int updateCount_PRODUCTs = 0;
+    public void update(Authority_FeatureVO authority_FeatureVO) {
 
         Connection con = null;
         PreparedStatement pstmt = null;
@@ -79,13 +76,11 @@ public class Admin_AuthorityJDBCDAO implements Admin_AuthorityDAO_interface {
 
             Class.forName(DRIVER);
             con = DriverManager.getConnection(URL, USER, PASSWORD);
+            pstmt = con.prepareStatement(UPDATE);
 
-            pstmt = con.prepareStatement(DELETE_PROC);
-            pstmt.setString(1, auth_no);
-            pstmt.setString(2, adm_no);
+            pstmt.setString(1, authority_FeatureVO.getAuth_name());
+            pstmt.setString(2, authority_FeatureVO.getAuth_no());
             pstmt.executeUpdate();
-
-            System.out.println("Delete Admin Authority:" + adm_no +" and "+ auth_no);
 
             // Handle any DRIVER errors
         } catch (ClassNotFoundException e) {
@@ -93,16 +88,9 @@ public class Admin_AuthorityJDBCDAO implements Admin_AuthorityDAO_interface {
                     + e.getMessage());
             // Handle any SQL errors
         } catch (SQLException se) {
-            if (con != null) {
-                try {
-                    con.rollback();
-                } catch (SQLException excep) {
-                    throw new RuntimeException("rollback error occured. "
-                            + excep.getMessage());
-                }
-            }
             throw new RuntimeException("A database error occured. "
                     + se.getMessage());
+            // Clean up JDBC resources
         } finally {
             if (pstmt != null) {
                 try {
@@ -120,12 +108,13 @@ public class Admin_AuthorityJDBCDAO implements Admin_AuthorityDAO_interface {
             }
         }
 
-
     }
 
-    public Admin_AuthorityVO findByPrimaryKey(String adm_no){
 
-        Admin_AuthorityVO admin_AuthorityVO = null;
+    @Override
+    public Authority_FeatureVO findByPrimaryKey(String auth_no){
+
+        Authority_FeatureVO authority_featureVO = null;
         Connection con = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
@@ -136,13 +125,13 @@ public class Admin_AuthorityJDBCDAO implements Admin_AuthorityDAO_interface {
             con = DriverManager.getConnection(URL, USER, PASSWORD);
             pstmt = con.prepareStatement(GET_ONE_STMT);
 
-            pstmt.setString(1, adm_no);
+            pstmt.setString(1, auth_no);
             rs = pstmt.executeQuery();
 
             while (rs.next()) {
-                admin_AuthorityVO = new Admin_AuthorityVO();
-                admin_AuthorityVO.setAdm_no(rs.getString("adm_no"));
-                admin_AuthorityVO.setAuth_no(rs.getString("auth_no"));
+                authority_featureVO = new Authority_FeatureVO();
+                authority_featureVO.setAuth_no(rs.getString("auth_no"));
+                authority_featureVO.setAuth_name(rs.getString("auth_name"));
             }
 
             // Handle any DRIVER errors
@@ -177,14 +166,14 @@ public class Admin_AuthorityJDBCDAO implements Admin_AuthorityDAO_interface {
                 }
             }
         }
-        return admin_AuthorityVO;
+        return authority_featureVO;
     }
 
-    public List<Admin_AuthorityVO> getAll(){
+    @Override
+    public List<Authority_FeatureVO> getAll(){
 
-        List<Admin_AuthorityVO> list = new ArrayList<Admin_AuthorityVO>();
-        Admin_AuthorityVO admin_AuthorityVO = null;
-
+        List<Authority_FeatureVO> list = new ArrayList<Authority_FeatureVO>();
+        Authority_FeatureVO authority_FeatureVO = null;
         Connection con = null;
         PreparedStatement pstmt = null;
         ResultSet rs = null;
@@ -197,18 +186,13 @@ public class Admin_AuthorityJDBCDAO implements Admin_AuthorityDAO_interface {
             rs = pstmt.executeQuery();
 
             while (rs.next()) {
-                admin_AuthorityVO = new Admin_AuthorityVO();
-                admin_AuthorityVO.setAdm_no(rs.getString("adm_no"));
-                admin_AuthorityVO.setAuth_no(rs.getString("auth_no"));
-                list.add(admin_AuthorityVO); // Store the row in the list
+                authority_FeatureVO = new Authority_FeatureVO();
+                authority_FeatureVO.setAuth_no(rs.getString("auth_no"));
+                authority_FeatureVO.setAuth_name(rs.getString("auth_name"));
+                list.add(authority_FeatureVO); // Store the row in the list
             }
 
-            // Handle any DRIVER errors
-        } catch (ClassNotFoundException e) {
-            throw new RuntimeException("Couldn't load database DRIVER. "
-                    + e.getMessage());
-            // Handle any SQL errors
-        } catch (SQLException se) {
+        } catch (Exception se) {
             throw new RuntimeException("A database error occured. "
                     + se.getMessage());
         } finally {
@@ -239,32 +223,35 @@ public class Admin_AuthorityJDBCDAO implements Admin_AuthorityDAO_interface {
 
     public static void main(String[] args) {
 
-        Admin_AuthorityJDBCDAO dao = new Admin_AuthorityJDBCDAO();
+        Authority_FeatureJDBCDAO dao = new Authority_FeatureJDBCDAO();
+        // 測試看看每個指令是否可以使用
+        // 新增 OK
+//        Authority_FeatureVO authority_FeatureVO1 = new Authority_FeatureVO();
+//        authority_FeatureVO1.setAuth_name("T^Q");
+//        dao.insert(authority_FeatureVO1);
+//        System.out.println("新增");
 
-        // 新增
-//        bbq.admin.model.Admin_AuthorityVO admin_AuthorityVO1 = new bbq.admin.model.Admin_AuthorityVO();
-//        admin_AuthorityVO1.setAuth_no("an1");
-//        admin_AuthorityVO1.setAdm_no("ad006");
-//        dao.insert(admin_AuthorityVO1);
-//        System.out.println("新增!");
+        // 修改 OK
+//        Authority_FeatureVO authority_FeatureVO2 = new Authority_FeatureVO();
+//        authority_FeatureVO2.setAuth_no("AF10");
+//        authority_FeatureVO2.setAuth_name("update");
+//		dao.update(authority_FeatureVO2);
+//		System.out.println("update");
 
-//         刪除(OK)
-//		dao.delete("ad007","an4");
-//		System.out.println("delete");
+        // 查詢 OK
+//        Authority_FeatureVO authority_FeatureVO3 = dao.findByPrimaryKey("AF10");
+//		System.out.print(authority_FeatureVO3.getAuth_no() + ",");
+//		System.out.println(authority_FeatureVO3.getAuth_name());
+//		System.out.println("---------------------");
 
-//         查詢
-        Admin_AuthorityVO admin_AuthorityVO3 = dao.findByPrimaryKey("ad005");
-        System.out.print(admin_AuthorityVO3.getAdm_no() + ",");
-        System.out.println(admin_AuthorityVO3.getAdm_no());
-        System.out.println("---------------------");
-
-//         查詢部門
-        List<Admin_AuthorityVO> list = dao.getAll();
-        for (Admin_AuthorityVO aa : list) {
-            System.out.print(aa.getAdm_no() + ",");
-            System.out.print(aa.getAuth_no());
-            System.out.println();
-        }
+        // 查詢全部 OK
+//		List<Authority_FeatureVO> list = dao.getAll();
+//		for (Authority_FeatureVO authority_featureVO : list) {
+//			System.out.print(authority_featureVO.getAuth_no() + ",");
+//			System.out.print(authority_featureVO.getAuth_name());
+//			System.out.println();
+//		}
 
     }
+
 }

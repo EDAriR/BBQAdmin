@@ -7,11 +7,9 @@ import java.util.List;
  */
 public interface Authority_FeatureDAO_interface {
 
-    public void insert(Authority_FeatureVO Authority_FeatureVO);
+    public void insert(Authority_FeatureVO authority_FeatureVO);
 
-    public void update(Authority_FeatureVO Authority_FeatureVO);
-
-    public void delete(String auth_no);
+    public void update(Authority_FeatureVO authority_FeatureVO);
 
     public Authority_FeatureVO findByPrimaryKey(String auth_no);
 

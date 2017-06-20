@@ -6,11 +6,11 @@ import java.io.Serializable;
  * Created by Java on 2017/6/8.
  */
 public class AdminVO implements Serializable {
-    private String adm_no;     //	Not Null (PK)
-    private String adm_acct;   //	Not Null
-    private String adm_pwd;    //	Not Null
-    private String adm_name;   //	Not Null
-    private String adm_mail;   //	Not Null
+    private String adm_no;     // Not Null (PK)
+    private String adm_acct;   // Not Null
+    private String adm_pwd;    // Not Null
+    private String adm_name;   // Not Null
+    private String adm_mail;   // Not Null
 
     public AdminVO() {
         super();

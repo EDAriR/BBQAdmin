@@ -11,8 +11,6 @@ public interface AdminDAO_interface {
 
     public void update(AdminVO AdminVO);
 
-    public void delete(String adm_no);
-
     public AdminVO findByPrimaryKey(String adm_no);
 
     public List<AdminVO> getAll();

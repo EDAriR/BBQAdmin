@@ -27,17 +27,13 @@ public class AdminDAO implements AdminDAO_interface {
     }
 
     // 新增資料
-    private static final String INSERT_STMT = "INSERT INTO admin (adm_no, adm_acct,adm_pwd, adm_name, adm_mail) " +
-            "VALUES ('ad'||LPAD(TO_CHAR(adm_no_seq.NEXTVAL),3,'0'), ?, ?, ?, ?)";
+    private static final String INSERT_STMT = "INSERT INTO admin (adm_no, adm_acct, adm_pwd, adm_name, adm_mail) " +
+            "VALUES ('ADM'||LPAD(to_char(adm_no_seq.nextval),5,'0'), ?, ?, ?, ?)";
     // 查詢資料
-    private static final String GET_ALL_STMT = "SELECT adm_no , adm_name FROM admin";
-    private static final String GET_ONE_STMT = "SELECT adm_no, adm_name FROM admin WHERE adm_no = ?";
-    // 刪除資料
-    private static final String DELETE_AUTHORITY = "DELETE FROM admin_authority WHERE adm_no = ?";
-    private static final String DELETE_FEATURE = "DELETE FROM authority_feature WHERE adm_no = ?";
-    private static final String DELETE_ADMIN = "DELETE FROM admin WHERE adm_no = ?";
+    private static final String GET_ALL_STMT = "SELECT * FROM admin";
+    private static final String GET_ONE_STMT = "SELECT * FROM admin WHERE adm_no = ?";
     // 修改資料
-    private static final String UPDATE = "UPDATE admin SET adm_name=? WHERE adm_no = ?";
+    private static final String UPDATE = "UPDATE admin SET adm_acct=?, adm_pwd=?, adm_name=?, adm_mail=? WHERE adm_no = ?";
 
 
     @Override
@@ -120,63 +116,6 @@ public class AdminDAO implements AdminDAO_interface {
     }
 
     @Override
-    public void delete(String adm_no) {
-
-        Connection con = null;
-        PreparedStatement pstmt = null;
-
-        try {
-
-            con = ds.getConnection();
-
-            // 1 設定於 pstm.executeUpdate()之前
-            con.setAutoCommit(false);
-
-            pstmt = con.prepareStatement(DELETE_AUTHORITY);
-            pstmt.setString(1, adm_no);
-            pstmt = con.prepareStatement(DELETE_FEATURE);
-            pstmt.setString(1, adm_no);
-            pstmt = con.prepareStatement(DELETE_ADMIN);
-            pstmt.setString(1, adm_no);
-            pstmt.executeUpdate();
-
-            // 2 設定於 pstm.executeUpdate()之後
-            con.commit();
-            con.setAutoCommit(true);
-            System.out.println("Delete admin" + adm_no);
-
-            // Handle any SQL errors
-        } catch (SQLException se) {
-            if (con != null) {
-                try {
-                    // 3 設定於當有exception發生時之catch區塊內
-                    con.rollback();
-                } catch (SQLException excep) {
-                    throw new RuntimeException("rollback error occured. "
-                            + excep.getMessage());
-                }
-            }
-            throw new RuntimeException("A database error occured. "
-                    + se.getMessage());
-        } finally {
-            if (pstmt != null) {
-                try {
-                    pstmt.close();
-                } catch (SQLException se) {
-                    se.printStackTrace(System.err);
-                }
-            }
-            if (con != null) {
-                try {
-                    con.close();
-                } catch (Exception e) {
-                    e.printStackTrace(System.err);
-                }
-            }
-        }
-    }
-
-    @Override
     public AdminVO findByPrimaryKey(String adm_no) {
 
         AdminVO adminVO = null;
@@ -194,7 +133,10 @@ public class AdminDAO implements AdminDAO_interface {
             while (rs.next()) {
                 adminVO = new AdminVO();
                 adminVO.setAdm_no(rs.getString("adm_no"));
+                adminVO.setAdm_acct(rs.getString("adm_acct"));
+                adminVO.setAdm_pwd(rs.getString("adm_pwd"));
                 adminVO.setAdm_name(rs.getString("adm_name"));
+                adminVO.setAdm_mail(rs.getString("adm_mail"));
             }
             // Handle any SQL errors
         } catch (SQLException se) {
