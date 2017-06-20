@@ -2,26 +2,149 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ec7651e1-93f6-406f-81de-f586266d95a3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/AuthorityFeature/listEmps_ByCompositeQuery.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/com/admin/controller/EmpServlet.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/admin/JDBCDAO/AdminJDBCDAO.java" afterPath="$PROJECT_DIR$/src/com/admin/model/AdminJDBCDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/admin/JDBCDAO/Admin_AuthorityJDBCDAO.java" afterPath="$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityJDBCDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/admin/JDBCDAO/Authority_FeatureJDBCDAO.java" afterPath="$PROJECT_DIR$/src/com/admin/model/Authority_FeatureJDBCDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/blank.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/fancybox_buttons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/fancybox_loading.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/fancybox_loading@2x.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/fancybox_overlay.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/fancybox_sprite.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/fancybox_sprite@2x.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/helpers/fancybox_buttons.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/sprite.psd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/font-awesome/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/font-awesome/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/font-awesome/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/font-awesome/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/gritter/images/gritter-light.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/gritter/images/gritter-long.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/gritter/images/gritter.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/gritter/images/ie-spacer.gif" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/lineicons/fonts/linecons.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/lineicons/fonts/linecons.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/lineicons/fonts/linecons.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/css/bootstrap.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/css/style-responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/css/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/css/table-responsive.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/css/to-do.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/css/zabuto_calendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/.gitattributes" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/CHANGELOG.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/composer (1).json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/composer.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/fancybox.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/gulpfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/lib/jquery-1.10.2.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/lib/jquery.mousewheel.pack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/helpers/jquery.fancybox-buttons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/helpers/jquery.fancybox-buttons.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/helpers/jquery.fancybox-media.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/helpers/jquery.fancybox-thumbs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/helpers/jquery.fancybox-thumbs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/jquery.fancybox-buttons.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/jquery.fancybox-buttons.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/jquery.fancybox-media.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/jquery.fancybox-thumbs.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/jquery.fancybox-thumbs.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/jquery.fancybox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/jquery.fancybox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/jquery.fancybox.pack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fancybox/source/jquery.mousewheel.pack.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/font-awesome/css/font-awesome.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/font-awesome/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/bootstrap-inputmask/bootstrap-inputmask.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/bootstrap-switch.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/calendar-conf-events.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/chart-master/Chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/chartjs-conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/common-scripts.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/easy-pie-chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/fancybox/jquery.fancybox.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/fancybox/jquery.fancybox.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/form-component.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/fullcalendar/bootstrap-fullcalendar.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/fullcalendar/fullcalendar.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/gritter-conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/gritter/css/jquery.gritter.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/gritter/css/jquery.gritter0.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/gritter/js/jquery.gritter.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/jquery-1.8.3.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/jquery-easy-pie-chart/jquery.easy-pie-chart.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/jquery-easy-pie-chart/jquery.easy-pie-chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/jquery-ui-1.9.2.custom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/jquery.backstretch.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/jquery.dcjqaccordion.2.7.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/jquery.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/jquery.nicescroll.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/jquery.scrollTo.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/jquery.sparkline.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/jquery.tagsinput.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/jquery.ui.touch-punch.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/morris-conf.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/sparkline-chart.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/tasks.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/js/zabuto_calendar.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/lineicons/fonts/linecons.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/lineicons/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/lineicons/lte-ie7.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/assets/lineicons/style.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/AuthorityFeature/addEmp.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/AuthorityFeature/images/back1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/AuthorityFeature/images/bazil007.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/AuthorityFeature/images/btn_close_small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/AuthorityFeature/images/btn_date_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/AuthorityFeature/images/btn_date_over.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/AuthorityFeature/images/btn_date_up.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/AuthorityFeature/images/btn_del_small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/AuthorityFeature/images/tomcat.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/AuthorityFeature/listOneEmp.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/AuthorityFeature/update_emp_input.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/dept/listEmps_ByDeptno.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/emp/images/back1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/emp/images/bazil007.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/emp/images/btn_close_small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/emp/images/btn_date_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/emp/images/btn_date_over.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/emp/images/btn_date_up.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/emp/images/btn_del_small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/emp/images/tomcat.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/emp/js/calendar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/emp/js/calendarcode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/emp/listAllEmp.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/emp/listEmps_ByCompositeQuery.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/emp/pages/page1.file" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/emp/pages/page1_ByCompositeQuery.file" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/emp/pages/page2.file" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/emp/pages/page2_ByCompositeQuery.file" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/back1.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/bazil007.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/btn_close_small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/btn_date_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/btn_date_over.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/btn_date_up.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/btn_del_small.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/images/tomcat.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/img/BaBeQ.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/img/BaBeQ192.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/img/BaBeQ2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/img/babeq3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/img/borderimg100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/img/circleborder100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/pencilline.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/select_page.jsp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/admin/controller/AuthorityFeatureServlet.java" afterPath="$PROJECT_DIR$/src/com/admin/controller/AuthorityFeatureServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/admin/model/AdminDAO.java" afterPath="$PROJECT_DIR$/src/com/admin/model/AdminDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/admin/model/AdminDAO_interface.java" afterPath="$PROJECT_DIR$/src/com/admin/model/AdminDAO_interface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/admin/model/AdminService.java" afterPath="$PROJECT_DIR$/src/com/admin/model/AdminService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/admin/model/AdminVO.java" afterPath="$PROJECT_DIR$/src/com/admin/model/AdminVO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityDAO.java" afterPath="$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityDAO_interface.java" afterPath="$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityDAO_interface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityService.java" afterPath="$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityVO.java" afterPath="$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityVO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/admin/model/Authority_FeatureDAO.java" afterPath="$PROJECT_DIR$/src/com/admin/model/Authority_FeatureDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/admin/model/Authority_FeatureDAO_interface.java" afterPath="$PROJECT_DIR$/src/com/admin/model/Authority_FeatureDAO_interface.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/admin/model/Authority_FeatureService.java" afterPath="$PROJECT_DIR$/src/com/admin/model/Authority_FeatureService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/admin/model/Authority_FeatureVO.java" afterPath="$PROJECT_DIR$/src/com/admin/model/Authority_FeatureVO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/AuthorityFeature/listAllAF.jsp" afterPath="$PROJECT_DIR$/WebContent/AuthorityFeature/listAllAF.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/news.html" afterPath="$PROJECT_DIR$/WebContent/news.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/report.html" afterPath="$PROJECT_DIR$/WebContent/report.html" />
     </list>
     <ignored path="$PROJECT_DIR$/build/classes/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,108 +156,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="Authority_FeatureDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/admin/model/Authority_FeatureDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Admin_AuthorityJDBCDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityJDBCDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminJDBCDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/admin/model/AdminJDBCDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Authority_FeatureVO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/admin/model/Authority_FeatureVO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="19" selection-end-line="9" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Admin_AuthorityDAO_interface.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityDAO_interface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/admin/model/AdminService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Admin_AuthorityDAO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="187" column="35" lean-forward="true" selection-start-line="187" selection-start-column="35" selection-end-line="187" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AdminVO.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/admin/model/AdminVO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Admin_AuthorityService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthorityFeatureServlet.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/admin/controller/AuthorityFeatureServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="29">
-              <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -248,340 +270,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Authority_FeatureVO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Authority_FeatureService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Authority_FeatureJDBCDAO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Authority_FeatureDAO_interface" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Authority_FeatureDAO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdminVO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdminService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdminJDBCDAO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdminDAO_interface" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="AdminDAO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin_AuthorityVO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin_AuthorityService" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin_AuthorityJDBCDAO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin_AuthorityDAO_interface" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin_AuthorityDAO" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ClassTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BBQAdmin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -612,9 +300,10 @@
       <recent name="com.admin.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\專題用\BBQAdmin\WebContent" />
+      <recent name="C:\Users\user\Desktop\專題用\BBQAdmin\WebContent\AuthorityFeature" />
       <recent name="C:\Users\user\Desktop\專題用\BBQAdmin\src\com\admin\model" />
       <recent name="C:\Users\user\Desktop\專題用\BBQAdmin\WebContent\AuthorityFeature\images" />
-      <recent name="C:\Users\user\Desktop\專題用\BBQAdmin\WebContent" />
       <recent name="C:\Users\user\Desktop\專題用\BBQAdmin\WebContent\emp" />
     </key>
   </component>
@@ -1056,7 +745,7 @@
       <workItem from="1497880260498" duration="650000" />
       <workItem from="1497881549959" duration="80000" />
       <workItem from="1497885990829" duration="10885000" />
-      <workItem from="1497971034695" duration="2126000" />
+      <workItem from="1497971034695" duration="2584000" />
     </task>
     <task id="LOCAL-00001" summary="relife">
       <created>1497866189418</created>
@@ -1086,11 +775,18 @@
       <option name="project" value="LOCAL" />
       <updated>1497896832648</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="AuthorityFeatureServlet delete">
+      <created>1497973999955</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1497973999955</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17700000" />
+    <option name="totallyTimeSpent" value="18158000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -1109,7 +805,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1136,7 +832,8 @@
     <MESSAGE value="relife" />
     <MESSAGE value=".gitignore" />
     <MESSAGE value="AF C+V" />
-    <option name="LAST_COMMIT_MESSAGE" value="AF C+V" />
+    <MESSAGE value="AuthorityFeatureServlet delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="AuthorityFeatureServlet delete" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1149,14 +846,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/admin/model/Authority_FeatureVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/admin/model/Authority_FeatureService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1349,14 +1038,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/AuthorityFeature/listAllAF.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1537">
-          <caret line="53" column="94" lean-forward="false" selection-start-line="53" selection-start-column="94" selection-end-line="53" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityVO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
@@ -1402,18 +1083,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityJDBCDAO.java">
+    <entry file="file://$PROJECT_DIR$/WebContent/AuthorityFeature/listAllAF.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="595">
+          <caret line="53" column="17" lean-forward="false" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/admin/model/AdminJDBCDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="636">
+          <caret line="187" column="35" lean-forward="false" selection-start-line="187" selection-start-column="35" selection-end-line="187" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/admin/model/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="e#1144#1145#0" expanded="true" />
+            <element signature="e#1195#1196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityDAO_interface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
           <folding />
         </state>
       </provider>
@@ -1426,27 +1126,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityDAO_interface.java">
+    <entry file="file://$PROJECT_DIR$/src/com/admin/model/AdminJDBCDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/admin/model/AdminService.java">
+    <entry file="file://$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityJDBCDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="187" column="35" lean-forward="true" selection-start-line="187" selection-start-column="35" selection-end-line="187" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1497973920451" expanded="true" signature="477:536" ph="INSERT INTO admin_authority... " />
+            <marker date="1497973920451" expanded="true" signature="599:628" ph="SELECT * FRO... admin_authority" />
+            <marker date="1497973920451" expanded="true" signature="685:731" ph="SELECT * FRO... admin_authority" />
+            <marker date="1497973920451" expanded="true" signature="804:864" ph="DELETE FROM " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1461,7 +1158,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/admin/model/Admin_AuthorityService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
-          <caret line="20" column="22" lean-forward="true" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
+          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -1469,8 +1166,19 @@
     <entry file="file://$PROJECT_DIR$/src/com/admin/controller/AuthorityFeatureServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="29">
-          <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/assets/js/gritter/js/jquery.gritter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1497970261934" expanded="true" signature="1852:1864" ph="..." />
+            <marker date="1497970261934" expanded="true" signature="2011:2021" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
