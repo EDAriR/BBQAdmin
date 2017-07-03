@@ -48,7 +48,7 @@
             <!-- sidebar menu start-->
             <ul class="sidebar-menu" id="nav-accordion">
                 <p class="centered">
-                    <a href="index.html">
+                    <a href="index.jsp">
                         <img src="img/babeq3.png" width="190">
                     </a>
                 </p>
@@ -56,7 +56,7 @@
                     <a href="javascript:;">
                     <span style="color: #636363">
                         <i class="fa fa-sign-out" aria-hidden="true"></i>
-                        ªüªÎ</span>
+                        ${adm_name}</span>
                     </a>
                 </h5>
 

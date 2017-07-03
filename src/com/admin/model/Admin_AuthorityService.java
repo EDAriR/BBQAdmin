@@ -15,7 +15,6 @@ public class Admin_AuthorityService {
 
         Admin_AuthorityVO admin_AuthorityVO = new Admin_AuthorityVO();
 
-//      adm_no, adm_acct, adm_pwd, adm_name,adm_mail
         admin_AuthorityVO.setAdm_no(adm_no);
         admin_AuthorityVO.setAuth_no(auth_no);
         dao.insert(admin_AuthorityVO);
