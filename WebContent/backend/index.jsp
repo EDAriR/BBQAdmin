@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="utf-8">
-
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="Big5" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <title>USER REPORT</title>
+    <title>Login BBQ</title>
     <!-- Bootstrap core CSS -->
     <link href="backend/assets/css/bootstrap.css" rel="stylesheet">
     <!--external css  ICON-->
@@ -27,13 +24,25 @@
 </head>
 
 <body>
+<%-- ���~���C --%>
+<c:if test="${not empty errorMsgs}">
+    <font color='red'>�Эץ��H�U���~:
+        <ul>
+            <c:forEach var="message" items="${errorMsgs}">
+                <li>${message}</li>
+            </c:forEach>
+        </ul>
+    </font>
+</c:if>
+<%-- ���~���C --%>
+
 <section id="container">
 
-<!-- **********************************************************************************************************************************************************
-MAIN SIDEBAR MENU
-*********************************************************************************************************************************************************** -->
+    <!-- **********************************************************************************************************************************************************
+    MAIN SIDEBAR MENU
+    *********************************************************************************************************************************************************** -->
 
-    <!--sidebar start 側邊欄-->
+    <!--sidebar start ������-->
     <aside>
         <div id="sidebar" class="nav-collapse ">
             <!-- sidebar menu start-->
@@ -47,73 +56,73 @@ MAIN SIDEBAR MENU
                     <a href="javascript:;">
                     <span style="color: #636363">
                         <i class="fa fa-sign-out" aria-hidden="true"></i>
-                        阿肥</span>
+                        ����</span>
                     </a>
                 </h5>
 
                 <li class="sub-menu">
                     <a href="javascript:;">
                         <i class="fa fa-desktop"></i>
-                        <span>會員資料管理</span>
+                        <span>�|����ƺ޲z</span>
                     </a>
                     <ul class="sub">
-                        <li><a href="member/member_expert.html">專家審核</a></li>
-                        <li><a href="member/member_grade.html">資深爸媽審核</a></li>
-                        <li><a href="member/buyer_report.html">買家檢舉</a></li>
-                        <li><a href="member/seller_reprot.html">賣家檢舉</a></li>
-                        <li><a href="member/product_report.html">商品檢舉</a></li>
-                        <li><a href="member/product_message_report.html">商品留言檢舉</a></li>
-                        <li><a href="member/answer_report.html">回覆問題檢舉</a></li>
-                        <li><a href="member/article_message_report.html">留言檢舉</a></li>
-                        <li><a href="report.html">聊天室用戶檢舉</a></li>
-                        <li><a href="panels.html">會員資料管理</a></li>
+                        <li><a href="member/member_expert.html">�M�a�f��</a></li>
+                        <li><a href="member/member_grade.html">��`�����f��</a></li>
+                        <li><a href="member/buyer_report.html">�R�a���|</a></li>
+                        <li><a href="member/seller_reprot.html">��a���|</a></li>
+                        <li><a href="member/product_report.html">�ӫ~���|</a></li>
+                        <li><a href="member/product_message_report.html">�ӫ~�d�����|</a></li>
+                        <li><a href="member/answer_report.html">�^�а��D���|</a></li>
+                        <li><a href="member/article_message_report.html">�d�����|</a></li>
+                        <li><a href="report.html">��ѫǥΤ����|</a></li>
+                        <li><a href="panels.html">�|����ƺ޲z</a></li>
                     </ul>
                 </li>
                 <li class="sub-menu">
                     <a href="javascript:;">
                         <i class="fa fa-car"></i>
-                        <span>推薦資料管理</span>
+                        <span>���˸�ƺ޲z</span>
                     </a>
                     <ul class="sub">
-                        <li><a href="map.html">推薦資料管</a></li>
-                        <li><a href="todo_list.html">副食品</a></li>
+                        <li><a href="map.html">���˸�ƺ�</a></li>
+                        <li><a href="todo_list.html">�ƭ��~</a></li>
                     </ul>
                 </li>
                 <li class="sub-menu">
                     <a href="javascript:;">
                         <i class="fa fa-book"></i>
-                        <span>分類管理</span>
+                        <span>�����޲z</span>
                     </a>
                     <ul class="sub">
-                        <li><a href="blank.html">購物區分類</a></li>
-                        <li><a href="backend/login.html">文章分類</a></li>
-                        <li><a href="lock_screen.html">商品分類</a></li>
-                        <li><a href="lock_screen.html">問題分類</a></li>
-                        <li><a href="lock_screen.html">專家分類</a></li>
+                        <li><a href="blank.html">�ʪ��Ϥ���</a></li>
+                        <li><a href="backend/login.html">�峹����</a></li>
+                        <li><a href="lock_screen.html">�ӫ~����</a></li>
+                        <li><a href="lock_screen.html">���D����</a></li>
+                        <li><a href="lock_screen.html">�M�a����</a></li>
                     </ul>
                 </li>
                 <li class="sub-menu">
                     <a href="news.html">
                         <i class="fa fa-bell"></i>
-                        <span>最新消息管理</span>
+                        <span>�̷s�����޲z</span>
                     </a>
                 </li>
                 <li class="sub-menu">
                     <a href="javascript:;">
                         <i class=" fa fa-legal"></i>
-                        <span>員工帳戶管理</span>
+                        <span>���u�b��޲z</span>
                     </a>
                 </li>
                 <li class="sub-menu">
                     <a href="javascript:;">
                         <i class=" fa fa-database"></i>
-                        <span>系統參數管理</span>
+                        <span>�t�ΰѼƺ޲z</span>
                     </a>
                 </li>
                 <li class="sub-menu">
                     <a href="javascript:;">
                         <i class="fa fa-bar-chart-o"></i>
-                        <span>後台分析管理</span>
+                        <span>��x���R�޲z</span>
                     </a>
                 </li>
             </ul>
@@ -122,24 +131,24 @@ MAIN SIDEBAR MENU
     </aside>
     <!--sidebar end-->
 
-<!-- **********************************************************************************************************************************************************
-MAIN CONTENT  這邊開始改 BBQ
-*********************************************************************************************************************************************************** -->
+    <!-- **********************************************************************************************************************************************************
+    MAIN CONTENT  �o��}�l�� BBQ
+    *********************************************************************************************************************************************************** -->
     <!--main content start-->
     <section id="main-content">
         <section class="wrapper">
-            <h3><i class="fa fa-angle-right"></i>還有 9487 個 待審核 </h3>
+            <h3><i class="fa fa-angle-right"></i>�٦� 9487 �� �ݼf�� </h3>
             <div class="row">
                 <div class="col-md-12">
                     <div class="content-panel">
                         <table class="table table-striped table-advance table-hover">
-                            <h4><i class="fa fa-angle-right"></i> 資格審核</h4>
+                            <h4><i class="fa fa-angle-right"></i> ���f��</h4>
                             <hr>
                             <thead>
                             <tr>
-                                <th><i class="fa fa-bullhorn"></i> 申請會員</th>
-                                <th class="hidden-phone"><i class="fa fa-question-circle"></i> 申請理由</th>
-                                <th><i class="fa fa-bookmark"></i> 申請日期</th>
+                                <th><i class="fa fa-bullhorn"></i> �ӽз|��</th>
+                                <th class="hidden-phone"><i class="fa fa-question-circle"></i> �ӽвz��</th>
+                                <th><i class="fa fa-bookmark"></i> �ӽФ��</th>
                                 <th><i class=" fa fa-edit"></i> Status</th>
                                 <th></th>
                             </tr>
@@ -150,7 +159,7 @@ MAIN CONTENT  這邊開始改 BBQ
                                 <td class="hidden-phone">Lorem Ipsum dolor</td>
                                 <td>2017/07/28</td>
                                 <td><a href="#" class="btn btn-default"><span
-                                        class="glyphicon glyphicon-share-alt"></span> 展開</a></td>
+                                        class="glyphicon glyphicon-share-alt"></span> �i�}</a></td>
 
                             </tr>
                             <tr>
@@ -162,7 +171,7 @@ MAIN CONTENT  這邊開始改 BBQ
                                 <td class="hidden-phone">Lorem Ipsum dolor</td>
                                 <td>2017/06/14</td>
                                 <td><a href="#" class="btn btn-default"><span
-                                        class="glyphicon glyphicon-share-alt"></span> 展開</a></td>
+                                        class="glyphicon glyphicon-share-alt"></span> �i�}</a></td>
 
                             </tr>
                             <tr>
@@ -174,7 +183,7 @@ MAIN CONTENT  這邊開始改 BBQ
                                 <td class="hidden-phone">Lorem Ipsum dolor</td>
                                 <td>2017/06/14</td>
                                 <td><a href="#" class="btn btn-default"><span
-                                        class="glyphicon glyphicon-share-alt"></span> 展開</a></td>
+                                        class="glyphicon glyphicon-share-alt"></span> �i�}</a></td>
 
                             </tr>
                             <tr>
@@ -186,7 +195,7 @@ MAIN CONTENT  這邊開始改 BBQ
                                 <td class="hidden-phone">Lorem Ipsum dolor</td>
                                 <td>217/06/14</td>
                                 <td><a href="#" class="btn btn-default"><span
-                                        class="glyphicon glyphicon-share-alt"></span> 展開</a></td>
+                                        class="glyphicon glyphicon-share-alt"></span> �i�}</a></td>
 
                             </tr>
                             <tr>
@@ -194,7 +203,7 @@ MAIN CONTENT  這邊開始改 BBQ
                                 <td class="hidden-phone">Lorem Ipsum dolor</td>
                                 <td>170/06/14</td>
                                 <td><a href="#" class="btn btn-default"><span
-                                        class="glyphicon glyphicon-share-alt"></span> 展開</a></td>
+                                        class="glyphicon glyphicon-share-alt"></span> �i�}</a></td>
 
                             </tr>
                             </tbody>
@@ -210,13 +219,13 @@ MAIN CONTENT  這邊開始改 BBQ
                 <div class="col-md-12">
                     <div class="content-panel">
                         <table class="table table-striped table-advance table-hover">
-                            <h4><i class="fa fa-angle-right"></i> 待審核檢舉</h4>
+                            <h4><i class="fa fa-angle-right"></i> �ݼf�����|</h4>
                             <hr>
                             <thead>
                             <tr>
-                                <th><i class="fa fa-bullhorn"></i> 被檢舉類別</th>
-                                <th class="hidden-phone"><i class="fa fa-question-circle"></i> 被檢舉人</th>
-                                <th><i class="fa fa-bookmark"></i>檢舉內容</th>
+                                <th><i class="fa fa-bullhorn"></i> �Q���|���O</th>
+                                <th class="hidden-phone"><i class="fa fa-question-circle"></i> �Q���|�H</th>
+                                <th><i class="fa fa-bookmark"></i>���|���e</th>
                                 <th><i class=" fa fa-edit"></i> Status</th>
                                 <th></th>
                             </tr>
@@ -227,7 +236,7 @@ MAIN CONTENT  這邊開始改 BBQ
                                 <td class="hidden-phone">Lorem Ipsum dolor</td>
                                 <td>12000.00$</td>
                                 <td><a href="#" class="btn btn-default"><span
-                                        class="glyphicon glyphicon-share-alt"></span> 展開</a></td>
+                                        class="glyphicon glyphicon-share-alt"></span> �i�}</a></td>
 
                             </tr>
                             <tr>
@@ -239,7 +248,7 @@ MAIN CONTENT  這邊開始改 BBQ
                                 <td class="hidden-phone">Lorem Ipsum dolor</td>
                                 <td>17900.00$</td>
                                 <td><a href="#" class="btn btn-default"><span
-                                        class="glyphicon glyphicon-share-alt"></span> 展開</a></td>
+                                        class="glyphicon glyphicon-share-alt"></span> �i�}</a></td>
 
                             </tr>
                             <tr>
@@ -251,7 +260,7 @@ MAIN CONTENT  這邊開始改 BBQ
                                 <td class="hidden-phone">Lorem Ipsum dolor</td>
                                 <td>14400.00$</td>
                                 <td><a href="#" class="btn btn-default"><span
-                                        class="glyphicon glyphicon-share-alt"></span> 展開</a></td>
+                                        class="glyphicon glyphicon-share-alt"></span> �i�}</a></td>
 
                             </tr>
                             <tr>
@@ -263,7 +272,7 @@ MAIN CONTENT  這邊開始改 BBQ
                                 <td class="hidden-phone">Lorem Ipsum dolor</td>
                                 <td>22000.50$</td>
                                 <td><a href="#" class="btn btn-default"><span
-                                        class="glyphicon glyphicon-share-alt"></span> 展開</a></td>
+                                        class="glyphicon glyphicon-share-alt"></span> �i�}</a></td>
 
                             </tr>
                             <tr>
@@ -271,7 +280,7 @@ MAIN CONTENT  這邊開始改 BBQ
                                 <td class="hidden-phone">Lorem Ipsum dolor</td>
                                 <td>12120.00$</td>
                                 <td><a href="#" class="btn btn-default"><span
-                                        class="glyphicon glyphicon-share-alt"></span> 展開</a></td>
+                                        class="glyphicon glyphicon-share-alt"></span> �i�}</a></td>
 
                             </tr>
                             </tbody>
@@ -303,12 +312,11 @@ MAIN CONTENT  這邊開始改 BBQ
 <script class="include" type="text/javascript" src="backend/assets/js/jquery.dcjqaccordion.2.7.js"></script>
 <script src="backend/assets/js/jquery.scrollTo.min.js"></script>
 <script src="backend/assets/js/jquery.nicescroll.js" type="text/javascript"></script>
-<!--common script for all pages 共用JS-->
+<!--common script for all pages �@��JS-->
 <script src="backend/assets/js/common-scripts.js"></script>
 <!--script for this page-->
 <script>
-    //刪除 custom select box
+    //�R�� custom select box
 </script>
 </body>
-
 </html>

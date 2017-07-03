@@ -11,8 +11,10 @@ public interface Admin_AuthorityDAO_interface {
 
     public void delete(String adm_no, String auth_no);
 
-    public List<Admin_AuthorityVO> findByAdmNo(String adm_no);
-    
+    public AdminVO findByPrimaryKey(String adm_no);
+
+    public AdminVO findByAdmAcct(String adm_acct);
+
     public List<Admin_AuthorityVO> getAll();
 
 }
