@@ -55,17 +55,10 @@ public class adminServlet extends HttpServlet {
                 /***************************2.開始查詢資料*****************************************/
                 AdminService adSvc = new AdminService();
                 AdminVO adminVO = adSvc.getOneAdmin(adminAc);
-
+                
                 if (adminVO == null) {
-                    errorMsgs.add("查無");
-                }
-                if (!errorMsgs.isEmpty()) {
-                    RequestDispatcher failureView = req
-                            .getRequestDispatcher("/backend/login.jsp");
-                    failureView.forward(req, res);
-                    return;//程式中斷
-                }
-                if (adminVO.getAdm_pwd().equals(adminPsd)) {
+                    errorMsgs.add("查無帳號");
+                }else if(adminVO.getAdm_pwd().equals(adminPsd)) {
                     errorMsgs.add("密碼錯誤");
                 }
                 if (!errorMsgs.isEmpty()) {
@@ -136,17 +129,14 @@ public class adminServlet extends HttpServlet {
         }
 
         if ("logout".equals(action)) {
-
-            session.removeAttribute("adminVOVO");
-            session.removeAttribute("adm_no");
-            session.removeAttribute("adm_name");
-            System.out.println("session clear : " + session.getAttribute("adm_no"));
-System.out.println("req.getContextPath()"+req.getContextPath());
+        	System.out.println("session clear before: " + session.getAttribute("adm_no"));
+            session.invalidate();
+            System.out.println("session clear after: " + session.getAttribute("adm_no"));
+            
             res.sendRedirect(req.getContextPath()+"/backend/login.jsp");
 
         }
-
-
+        
         if ("delete".equals(action)) { // 來自listAllChat_Friend.jsp
 
         }

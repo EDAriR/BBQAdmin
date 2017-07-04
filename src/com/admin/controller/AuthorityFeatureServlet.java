@@ -60,31 +60,31 @@ public class AuthorityFeatureServlet extends HttpServlet {
             }
         }
 
-        /*if ("delete_Dept".equals(action)) {
+        if ("delete_Dept".equals(action)) {
 
             List<String> errorMsgs = new LinkedList<String>();
             req.setAttribute("errorMsgs", errorMsgs);
 
             try {
-                *//***************************1.接收請求參數***************************************//*
+                //***************************1.接收請求參數***************************************//*
                 String auth_no = new String(req.getParameter("auth_no"));
 
-                *//***************************2.開始刪除資料***************************************//*
+                //***************************2.開始刪除資料***************************************//*
                 Authority_FeatureService authority_FeatureSvc = new Authority_FeatureService();
                 authority_FeatureSvc.deleteAF(auth_no);
 
-                *//***************************3.刪除完成,準備轉交(Send the Success view)***********//*
+                //***************************3.刪除完成,準備轉交(Send the Success view)***********//*
                 String url = "/dept/listAllAF.jsp";
                 RequestDispatcher successView = req.getRequestDispatcher(url);// 刪除成功後, 成功轉交 回到 /dept/listAllAF.jsp
                 successView.forward(req, res);
 
-                *//***************************其他可能的錯誤處理***********************************//*
+                //***************************其他可能的錯誤處理***********************************//*
             } catch (Exception e) {
                 errorMsgs.add("刪除資料失敗:" + e.getMessage());
                 RequestDispatcher failureView = req
                         .getRequestDispatcher("/AuthorityFeature/listAllAF.jsp");
                 failureView.forward(req, res);
             }
-        }*/
+        }
     }
 }

@@ -5,14 +5,14 @@
 <%-- 此頁練習採用 EL 的寫法取值 --%>
 
 <%
-AdminService cfSvc = new AdminService();
-List<AdminVO> list = cfSvc.getAll();
+AdminService adSvc = new AdminService();
+List<AdminVO> list = adSvc.getAll();
 pageContext.setAttribute("list",list);
 %>
 
 <html>
 <head>
-<title>所有好友資料 - listAllChat_Friend.jsp</title>
+<title>所有Admin資料 - listAD0403.jsp</title>
 </head>
 <body bgcolor='white'>
 <b><font color=red>此頁練習採用 EL 的寫法取值:</font></b>
@@ -47,12 +47,14 @@ pageContext.setAttribute("list",list);
 		<th>刪除</th>
 	</tr>
 	<%@ include file="page1.file" %>
-	<c:forEach var="cfVO" items="${list}" begin="<%=pageIndex%>" end="<%=pageIndex+rowsPerPage-1%>">
+
+	
+	<c:forEach var="adVO" items="${list}" begin="<%=pageIndex%>" end="<%=pageIndex+rowsPerPage-1%>">
 		<tr align='center' valign='middle' ${(cfVO.cf_no==param.cf_no) ? 'bgcolor=#CCCCFF':''}><!--將修改的那一筆加入對比色而已-->
-			<td>${cfVO.cf_no}</td>
-			<td>${cfVO.mem_no_s}</td>
-			<td>${cfVO.mem_no_o}</td>
-			<td>${cfVO.cf_is_del}</td>
+			<td>${adVO.cf_no}</td>
+			<td>${adVO.mem_no_s}</td>
+			<td>${adVO.mem_no_o}</td>
+			<td>${adVO.cf_is_del}</td>
 			<td>
 				<FORM METHOD="post" ACTION="<%=request.getContextPath()%>/chat/ChatFriend/Chat_FriendServlet.do">  <%--QQ--%>
 					<input type="submit" value="修改">

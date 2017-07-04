@@ -212,4 +212,16 @@ public class Admin_AuthorityDAO implements Admin_AuthorityDAO_interface {
         }
         return list;
     }
+
+	@Override
+	public AdminVO findByPrimaryKey(String adm_no) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public AdminVO findByAdmAcct(String adm_acct) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
