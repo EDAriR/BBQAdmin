@@ -1,18 +1,21 @@
 package com.admin.controller;
 
-import com.admin.model.*;
+import com.admin.model.AdminService;
+import com.admin.model.AdminVO;
 
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
 
-@WebServlet("/AdminServlet.do")
-public class AdminServlet extends HttpServlet {
+@WebServlet("/adminServlet.do")
+public class adminServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
     public void doGet(HttpServletRequest req, HttpServletResponse res)
@@ -28,7 +31,7 @@ public class AdminServlet extends HttpServlet {
 
 
         if ("login".equals(action)) {
-System.out.println("login \"action\" in ADC : " + action);
+            System.out.println("login \"action\" in ADC : " + action);
             List<String> errorMsgs = new LinkedList<String>();
             HttpSession session = req.getSession();
 
@@ -61,7 +64,7 @@ System.out.println("login \"action\" in ADC : " + action);
                     failureView.forward(req, res);
                     return;//程式中斷
                 }
-                if(adminVOVO.getAdm_pwd().equals(adminPsd)){
+                if (adminVOVO.getAdm_pwd().equals(adminPsd)) {
                     errorMsgs.add("密碼錯誤");
                 }
                 if (!errorMsgs.isEmpty()) {
@@ -78,7 +81,7 @@ System.out.println("login \"action\" in ADC : " + action);
                 session.setAttribute("adm_name", adminVOVO.getAdm_name());
 
                 String url = "/backend/index.jsp";
-                System.out.println("adminVOVO: " +adminVOVO +"\n" +"url: " + url);
+                System.out.println("adminVOVO: " + adminVOVO + "\n" + "url: " + url);
                 RequestDispatcher successView = req.getRequestDispatcher(url);
                 successView.forward(req, res);
 
@@ -91,8 +94,8 @@ System.out.println("login \"action\" in ADC : " + action);
             }
         }
 
-        if ("insert".equals(action)) { // 來自addEmp.jsp的請求  
-System.out.println("action in Chat_FrienServlet.do:" + action);
+        if ("insert".equals(action)) { // 來自addEmp.jsp的請求
+            System.out.println("action in Chat_FrienServlet.do:" + action);
             List<String> errorMsgs = new LinkedList<String>();
             // Store this set in the request scope, in case we need to
             // send the ErrorPage view.
@@ -135,5 +138,6 @@ System.out.println("action in Chat_FrienServlet.do:" + action);
         if ("delete".equals(action)) { // 來自listAllChat_Friend.jsp
 
         }
+
     }
 }

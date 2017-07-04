@@ -26,7 +26,7 @@
     </font>
 </c:if>
 
-<FORM METHOD="post" ACTION="AdminServlet.do" name="form1">
+<FORM METHOD="post" ACTION="<%=request.getContextPath()%>/backend/admin/adminServlet.do" name="form1">
     <table border="0">
 
         <tr>
