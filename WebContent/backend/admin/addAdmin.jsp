@@ -12,17 +12,17 @@
 <head>
     <title>Login BBQ</title>
     <!-- Bootstrap core CSS -->
-    <link href="<%=request.getContextPath()%>/admin/backend/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/backend/assets/css/bootstrap.css" rel="stylesheet">
     <!--external css  ICON-->
-    <link href="<%=request.getContextPath()%>/admin/backend/assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/admin/backend/assets/css/zabuto_calendar.css">
-    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/admin/backend/assets/js/gritter/css/jquery.gritter.css"/>
-    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/admin/backend/assets/lineicons/style.css">
-    <link href="<%=request.getContextPath()%>/admin/backend/assets/css/style-responsive.css" rel="stylesheet">
-    <link href="<%=request.getContextPath()%>/admin/backend/assets/css/table-responsive.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/backend/assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/backend/assets/css/zabuto_calendar.css">
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/backend/assets/js/gritter/css/jquery.gritter.css"/>
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/backend/assets/lineicons/style.css">
+    <link href="<%=request.getContextPath()%>/backend/assets/css/style-responsive.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/backend/assets/css/table-responsive.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="<%=request.getContextPath()%>/admin/backend/assets/css/style.css" rel="stylesheet">
-    <link href="<%=request.getContextPath()%>/admin/backend/assets/css/style-responsive.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/backend/assets/css/style.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/backend/assets/css/style-responsive.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -229,13 +229,13 @@
     <!--footer end-->
 </section>
 <!-- js placed at the end of the document so the pages load faster -->
-<script src="<%=request.getContextPath()%>/admin/backend/assets/js/jquery.js"></script>
-<script src="<%=request.getContextPath()%>/admin/backend/assets/js/bootstrap.min.js"></script>
-<script class="include" type="text/javascript" src="<%=request.getContextPath()%>/admin/backend/assets/js/jquery.dcjqaccordion.2.7.js"></script>
-<script src="<%=request.getContextPath()%>/admin/backend/assets/js/jquery.scrollTo.min.js"></script>
-<script src="<%=request.getContextPath()%>/admin/backend/assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+<script src="<%=request.getContextPath()%>/backend/assets/js/jquery.js"></script>
+<script src="<%=request.getContextPath()%>/backend/assets/js/bootstrap.min.js"></script>
+<script class="include" type="text/javascript" src="<%=request.getContextPath()%>/backend/assets/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="<%=request.getContextPath()%>/backend/assets/js/jquery.scrollTo.min.js"></script>
+<script src="<%=request.getContextPath()%>/backend/assets/js/jquery.nicescroll.js" type="text/javascript"></script>
 <!--common script for all pages ¦@¥ÎJS-->
-<script src="<%=request.getContextPath()%>/admin/backend/assets/js/common-scripts.js"></script>
+<script src="<%=request.getContextPath()%>/backend/assets/js/common-scripts.js"></script>
 <!--script for this page-->
 <script>
     //§R°£ custom select box

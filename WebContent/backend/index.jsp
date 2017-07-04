@@ -4,17 +4,17 @@
 <head>
     <title>Login BBQ</title>
     <!-- Bootstrap core CSS -->
-    <link href="backend/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/backend/assets/css/bootstrap.css" rel="stylesheet">
     <!--external css  ICON-->
-    <link href="backend/assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="backend/assets/css/zabuto_calendar.css">
-    <link rel="stylesheet" type="text/css" href="backend/assets/js/gritter/css/jquery.gritter.css"/>
-    <link rel="stylesheet" type="text/css" href="backend/assets/lineicons/style.css">
-    <link href="backend/assets/css/style-responsive.css" rel="stylesheet">
-    <link href="backend/assets/css/table-responsive.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/backend/assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/backend/assets/css/zabuto_calendar.css">
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/backend/assets/js/gritter/css/jquery.gritter.css"/>
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/backend/assets/lineicons/style.css">
+    <link href="<%=request.getContextPath()%>/backend/assets/css/style-responsive.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/backend/assets/css/table-responsive.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="backend/assets/css/style.css" rel="stylesheet">
-    <link href="backend/assets/css/style-responsive.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/backend/assets/css/style.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/backend/assets/css/style-responsive.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -53,11 +53,15 @@
                     </a>
                 </p>
                 <h5 class="centered" style="font-size: 24px;">
-                    <a href="javascript:;">
+                <form id="logout" method="POST" 
+                action="<%=request.getContextPath()%>/backend/admin/adminServlet.do">
+                    <input type="hidden" name="action" value="logout">
+                    <a href="javascript:void()" onclick="document.getElementById('logout').submit();">
                     <span style="color: #636363">
                         <i class="fa fa-sign-out" aria-hidden="true"></i>
                         ${adm_name}</span>
                     </a>
+                    </form>
                 </h5>
 
                 <li class="sub-menu">
@@ -307,13 +311,13 @@
     <!--footer end-->
 </section>
 <!-- js placed at the end of the document so the pages load faster -->
-<script src="backend/assets/js/jquery.js"></script>
-<script src="backend/assets/js/bootstrap.min.js"></script>
+<script src="<%=request.getContextPath()%>/backend/assets/js/jquery.js"></script>
+<script src="<%=request.getContextPath()%>/backend/assets/js/bootstrap.min.js"></script>
 <script class="include" type="text/javascript" src="backend/assets/js/jquery.dcjqaccordion.2.7.js"></script>
-<script src="backend/assets/js/jquery.scrollTo.min.js"></script>
-<script src="backend/assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+<script src="<%=request.getContextPath()%>/backend/assets/js/jquery.scrollTo.min.js"></script>
+<script src="<%=request.getContextPath()%>/backend/assets/js/jquery.nicescroll.js" type="text/javascript"></script>
 <!--common script for all pages ¦@¥ÎJS-->
-<script src="backend/assets/js/common-scripts.js"></script>
+<script src="<%=request.getContextPath()%>/backend/assets/js/common-scripts.js"></script>
 <!--script for this page-->
 <script>
     //§R°£ custom select box

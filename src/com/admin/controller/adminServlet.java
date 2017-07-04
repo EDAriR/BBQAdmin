@@ -28,12 +28,13 @@ public class adminServlet extends HttpServlet {
 
         req.setCharacterEncoding("UTF-8");
         String action = req.getParameter("action");
+        HttpSession session = req.getSession();
 
 
         if ("login".equals(action)) {
             System.out.println("login \"action\" in ADC : " + action);
             List<String> errorMsgs = new LinkedList<String>();
-            HttpSession session = req.getSession();
+            session = req.getSession();
 
             req.setAttribute("errorMsgs", errorMsgs);
 
@@ -53,9 +54,9 @@ public class adminServlet extends HttpServlet {
                 }
                 /***************************2.開始查詢資料*****************************************/
                 AdminService adSvc = new AdminService();
-                AdminVO adminVOVO = adSvc.getOneAdmin(adminAc);
+                AdminVO adminVO = adSvc.getOneAdmin(adminAc);
 
-                if (adminVOVO == null) {
+                if (adminVO == null) {
                     errorMsgs.add("查無");
                 }
                 if (!errorMsgs.isEmpty()) {
@@ -64,7 +65,7 @@ public class adminServlet extends HttpServlet {
                     failureView.forward(req, res);
                     return;//程式中斷
                 }
-                if (adminVOVO.getAdm_pwd().equals(adminPsd)) {
+                if (adminVO.getAdm_pwd().equals(adminPsd)) {
                     errorMsgs.add("密碼錯誤");
                 }
                 if (!errorMsgs.isEmpty()) {
@@ -75,13 +76,13 @@ public class adminServlet extends HttpServlet {
                 }
 
                 /***************************3.查詢完成,準備轉交(Send the Success view)*************/
-                req.setAttribute("adminVOVO", adminVOVO);
-                session.setAttribute("adminVOVO", adminVOVO);
-                session.setAttribute("adm_no", adminVOVO.getAdm_no());
-                session.setAttribute("adm_name", adminVOVO.getAdm_name());
+                req.setAttribute("adminVO", adminVO);
+                session.setAttribute("adminVO", adminVO);
+                session.setAttribute("adm_no", adminVO.getAdm_no());
+                session.setAttribute("adm_name", adminVO.getAdm_name());
 
                 String url = "/backend/index.jsp";
-                System.out.println("adminVOVO: " + adminVOVO + "\n" + "url: " + url);
+                System.out.println("adminVOVO: " + adminVO + "\n" + "url: " + url);
                 RequestDispatcher successView = req.getRequestDispatcher(url);
                 successView.forward(req, res);
 
@@ -132,6 +133,17 @@ public class adminServlet extends HttpServlet {
             RequestDispatcher successView = req.getRequestDispatcher(url); // 新增成功後轉交listAllEmp.jsp
             successView.forward(req, res);
             /***************************其他可能的錯誤處理**********************************/
+        }
+
+        if ("logout".equals(action)) {
+
+            session.removeAttribute("adminVOVO");
+            session.removeAttribute("adm_no");
+            session.removeAttribute("adm_name");
+            System.out.println("session clear : " + session.getAttribute("adm_no"));
+System.out.println("req.getContextPath()"+req.getContextPath());
+            res.sendRedirect(req.getContextPath()+"/backend/login.jsp");
+
         }
 
 
