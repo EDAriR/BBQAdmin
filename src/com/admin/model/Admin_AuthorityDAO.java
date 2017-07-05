@@ -29,6 +29,8 @@ public class Admin_AuthorityDAO implements Admin_AuthorityDAO_interface {
     // 查詢資料
     private static final String GET_ALL_STMT = "SELECT * FROM admin_authority";
     private static final String GET_BY_ADM_NO_STMT = "SELECT * FROM admin_authority WHERE adm_no = ?";
+    private static final String GET_BY_AUTH_NO = "SELECT * FROM admin_authority WHERE auth_no = ?";
+    private static final String GET_BY_PK = "SELECT * FROM admin_authority WHERE adm_no = ? AND auth_no = ?";
     // 刪除資料
     private static final String DELETE_ADMIN_AUTHORITY = "DELETE FROM admin_authority WHERE adm_no = ? AND auth_no = ?";
 
@@ -125,6 +127,7 @@ public class Admin_AuthorityDAO implements Admin_AuthorityDAO_interface {
 
             con = ds.getConnection();
             pstmt = con.prepareStatement(GET_BY_ADM_NO_STMT);
+            pstmt.setString(1, adm_no());
             rs = pstmt.executeQuery();
 
             while (rs.next()) {
@@ -160,6 +163,111 @@ public class Admin_AuthorityDAO implements Admin_AuthorityDAO_interface {
             }
         }
         return list;
+    }
+
+    @Override
+    public List<Admin_AuthorityVO> findByAuthNo(String auth_no) {
+
+        pstmt.setString(1, adm_acct);
+
+        List<Admin_AuthorityVO> list = new ArrayList<Admin_AuthorityVO>();
+        Admin_AuthorityVO admin_authorityVO = null;
+        Connection con = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        try {
+
+            con = ds.getConnection();
+            pstmt = con.prepareStatement(GET_BY_AUTH_NO);
+            pstmt.setString(1, adm_no());
+            rs = pstmt.executeQuery();
+
+            while (rs.next()) {
+                admin_authorityVO = new Admin_AuthorityVO();
+                admin_authorityVO.setAdm_no(rs.getString("adm_no"));
+                admin_authorityVO.setAuth_no(rs.getString("auth_no"));
+                list.add(admin_authorityVO); // Store the row in the list
+            }
+            // Handle any SQL errors
+        } catch (SQLException se) {
+            throw new RuntimeException("A database error occured. " + se.getMessage());
+        } finally {
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException se) {
+                    se.printStackTrace(System.err);
+                }
+            }
+            if (pstmt != null) {
+                try {
+                    pstmt.close();
+                } catch (SQLException se) {
+                    se.printStackTrace(System.err);
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (Exception e) {
+                    e.printStackTrace(System.err);
+                }
+            }
+        }
+        return list;
+    }
+
+    @Override
+    public Admin_AuthorityVO findByPrimaryKey(String adm_no, String auth_no) {
+
+        Admin_AuthorityVO admin_authorityVO = null;
+        Connection con = null;
+        PreparedStatement pstmt = null;
+        ResultSet rs = null;
+
+        try {
+
+            con = ds.getConnection();
+            pstmt = con.prepareStatement(GET_BY_PK);
+
+            pstmt.setString(1, adm_no);
+            pstmt.setString(2, auth_no);
+
+            rs = pstmt.executeQuery();
+
+            while (rs.next()) {
+                admin_authorityVO = new Admin_AuthorityVO();
+                admin_authorityVO.setAdm_no(rs.getString("adm_no"));
+                admin_authorityVO.setAuth_no(rs.getString("auth_no"));
+            }
+            // Handle any SQL errors
+        } catch (SQLException se) {
+            throw new RuntimeException("A database error occured. " + se.getMessage());
+        } finally {
+            if (rs != null) {
+                try {
+                    rs.close();
+                } catch (SQLException se) {
+                    se.printStackTrace(System.err);
+                }
+            }
+            if (pstmt != null) {
+                try {
+                    pstmt.close();
+                } catch (SQLException se) {
+                    se.printStackTrace(System.err);
+                }
+            }
+            if (con != null) {
+                try {
+                    con.close();
+                } catch (Exception e) {
+                    e.printStackTrace(System.err);
+                }
+            }
+        }
+        return admin_authorityVO;
     }
 
     @Override
@@ -212,16 +320,4 @@ public class Admin_AuthorityDAO implements Admin_AuthorityDAO_interface {
         }
         return list;
     }
-
-	@Override
-	public AdminVO findByPrimaryKey(String adm_no) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public AdminVO findByAdmAcct(String adm_acct) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }

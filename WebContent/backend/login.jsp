@@ -5,13 +5,13 @@
     <title>Login BBQ</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="<%=request.getContextPath()%>/backend/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/backend/blocked/assets/css/bootstrap.css" rel="stylesheet">
     <!--external css-->
-    <link href="<%=request.getContextPath()%>/backend/assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+    <link href="<%=request.getContextPath()%>/backend/blocked/assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
 
     <!-- Custom styles for this template -->
-    <link href="<%=request.getContextPath()%>/backend/assets/css/style.css" rel="stylesheet">
-    <link href="<%=request.getContextPath()%>/backend/assets/css/style-responsive.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/backend/blocked/assets/css/style.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/backend/blocked/assets/css/style-responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -89,14 +89,14 @@ MAIN CONTENT
 </div>
 
 <!-- js placed at the end of the document so the pages load faster -->
-<script src="<%=request.getContextPath()%>/backend/assets/js/jquery.js"></script>
-<script src="<%=request.getContextPath()%>/backend/assets/js/bootstrap.min.js"></script>
+<script src="<%=request.getContextPath()%>/backend/blocked/assets/js/jquery.js"></script>
+<script src="<%=request.getContextPath()%>/backend/blocked/assets/js/bootstrap.min.js"></script>
 
 <!--BACKSTRETCH-->
 <!-- You can use an image of whatever size. This script will stretch to fit in any screen size.-->
-<script type="text/javascript" src="<%=request.getContextPath()%>/backend/assets/js/jquery.backstretch.min.js"></script>
+<script type="text/javascript" src="<%=request.getContextPath()%>/backend/blocked/assets/js/jquery.backstretch.min.js"></script>
 <script>
-    $.backstretch("<%=request.getContextPath()%>/backend/assets/img/moteher.jpg", {speed: 500});
+    $.backstretch("<%=request.getContextPath()%>/backend/blocked/assets/img/moteher.jpg", {speed: 500});
 </script>
 
 

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
-         version="2.4">
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+
 
 
     <display-name>BBQAdmin</display-name>
@@ -31,18 +30,17 @@
     </servlet-mapping>
 
  <!--<filter>-->
-    <filter>
+   <filter>
         <filter-name>LoginFilter</filter-name>
         <filter-class>com.admin.controller.LoginFilter</filter-class>
     </filter>
     <filter-mapping>
         <filter-name>LoginFilter</filter-name>
-        <url-pattern>/backend/admin/addAdmin.jsp</url-pattern>
+        <url-pattern>/backend/blocked/*</url-pattern>
             <dispatcher>REQUEST</dispatcher>
 		    <dispatcher>FORWARD</dispatcher>
 		    <dispatcher>INCLUDE</dispatcher>
 		    <dispatcher>ERROR</dispatcher>
-		    <!-- <dispatcher>ASYNC</dispatcher> -->
     </filter-mapping>
     <!--<filter>-->
 

@@ -4,17 +4,17 @@
 <head>
     <title>Login BBQ</title>
     <!-- Bootstrap core CSS -->
-    <link href="<%=request.getContextPath()%>/backend/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/backend/blocked/assets/css/bootstrap.css" rel="stylesheet">
     <!--external css  ICON-->
-    <link href="<%=request.getContextPath()%>/backend/assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/backend/assets/css/zabuto_calendar.css">
-    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/backend/assets/js/gritter/css/jquery.gritter.css"/>
-    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/backend/assets/lineicons/style.css">
-    <link href="<%=request.getContextPath()%>/backend/assets/css/style-responsive.css" rel="stylesheet">
-    <link href="<%=request.getContextPath()%>/backend/assets/css/table-responsive.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/backend/blocked/assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/backend/blocked/assets/css/zabuto_calendar.css">
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/backend/blocked/assets/js/gritter/css/jquery.gritter.css"/>
+    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/backend/blocked/assets/lineicons/style.css">
+    <link href="<%=request.getContextPath()%>/backend/blocked/assets/css/style-responsive.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/backend/blocked/assets/css/table-responsive.css" rel="stylesheet">
     <!-- Custom styles for this template -->
-    <link href="<%=request.getContextPath()%>/backend/assets/css/style.css" rel="stylesheet">
-    <link href="<%=request.getContextPath()%>/backend/assets/css/style-responsive.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/backend/blocked/assets/css/style.css" rel="stylesheet">
+    <link href="<%=request.getContextPath()%>/backend/blocked/assets/css/style-responsive.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -49,7 +49,7 @@
             <ul class="sidebar-menu" id="nav-accordion">
                 <p class="centered">
                     <a href="index.jsp">
-                        <img src="img/babeq3.png" width="190">
+                        <img src="<%=request.getContextPath()%>/backend/blocked/img/babeq3.png" width="190">
                     </a>
                 </p>
                 <h5 class="centered" style="font-size: 24px;">
@@ -311,13 +311,13 @@
     <!--footer end-->
 </section>
 <!-- js placed at the end of the document so the pages load faster -->
-<script src="<%=request.getContextPath()%>/backend/assets/js/jquery.js"></script>
-<script src="<%=request.getContextPath()%>/backend/assets/js/bootstrap.min.js"></script>
-<script class="include" type="text/javascript" src="backend/assets/js/jquery.dcjqaccordion.2.7.js"></script>
-<script src="<%=request.getContextPath()%>/backend/assets/js/jquery.scrollTo.min.js"></script>
-<script src="<%=request.getContextPath()%>/backend/assets/js/jquery.nicescroll.js" type="text/javascript"></script>
+<script src="<%=request.getContextPath()%>/backend/blocked/assets/js/jquery.js"></script>
+<script src="<%=request.getContextPath()%>/backend/blocked/assets/js/bootstrap.min.js"></script>
+<script class="include" type="text/javascript" src="<%=request.getContextPath()%>/backend/blocked/assets/js/jquery.dcjqaccordion.2.7.js"></script>
+<script src="<%=request.getContextPath()%>/backend/blocked/assets/js/jquery.scrollTo.min.js"></script>
+<script src="<%=request.getContextPath()%>/backend/blocked/assets/js/jquery.nicescroll.js" type="text/javascript"></script>
 <!--common script for all pages ¦@¥ÎJS-->
-<script src="<%=request.getContextPath()%>/backend/assets/js/common-scripts.js"></script>
+<script src="<%=request.getContextPath()%>/backend/blocked/assets/js/common-scripts.js"></script>
 <!--script for this page-->
 <script>
     //§R°£ custom select box

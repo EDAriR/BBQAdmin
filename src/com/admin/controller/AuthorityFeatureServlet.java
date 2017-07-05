@@ -71,7 +71,7 @@ public class AuthorityFeatureServlet extends HttpServlet {
 
                 //***************************2.開始刪除資料***************************************//*
                 Authority_FeatureService authority_FeatureSvc = new Authority_FeatureService();
-                authority_FeatureSvc.deleteAF(auth_no);
+//                authority_FeatureSvc.deleteAF(auth_no);
 
                 //***************************3.刪除完成,準備轉交(Send the Success view)***********//*
                 String url = "/dept/listAllAF.jsp";

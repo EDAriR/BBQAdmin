@@ -36,7 +36,7 @@ public class adminServlet extends HttpServlet {
 
 
         if ("login".equals(action)) {
-            System.out.println("login \"action\" in ADC : " + action);
+System.out.println("login \"action\" in ADC : " + action);
             List<String> errorMsgs = new LinkedList<String>();
             session = req.getSession();
 
@@ -47,7 +47,10 @@ public class adminServlet extends HttpServlet {
                 String adminAc = req.getParameter("adminAc");
                 String adminPsd = req.getParameter("adminPsd");
                 if (adminAc == null || (adminAc.trim()).length() == 0) {
-                    errorMsgs.add("請輸Admin Account");
+                    errorMsgs.add("請輸入帳號");
+                }
+                if (adminPsd == null || (adminPsd.trim()).length() == 0) {
+                    errorMsgs.add("請輸入密碼");
                 }
                 // Send the use back to the form, if there were errors
                 if (!errorMsgs.isEmpty()) {
@@ -62,7 +65,7 @@ public class adminServlet extends HttpServlet {
                 
                 if (adminVO == null) {
                     errorMsgs.add("查無帳號");
-                }else if(adminVO.getAdm_pwd().equals(adminPsd)) {
+                }else if(!adminVO.getAdm_pwd().equals(adminPsd)) {
                     errorMsgs.add("密碼錯誤");
                 }
                 if (!errorMsgs.isEmpty()) {
@@ -79,7 +82,7 @@ public class adminServlet extends HttpServlet {
                 session.setAttribute("adm_name", adminVO.getAdm_name());
 
                 String url = "/backend/index.jsp";
-                System.out.println("adminVO: " + adminVO + "\n" + "url: " + url);
+System.out.println("adminVO: " + adminVO + "\n" + "url: " + url);
                 RequestDispatcher successView = req.getRequestDispatcher(url);
                 successView.forward(req, res);
 
@@ -133,9 +136,9 @@ public class adminServlet extends HttpServlet {
         }
 
         if ("logout".equals(action)) {
-        	System.out.println("session clear before: " + session.getAttribute("adm_no"));
+System.out.println("session clear before: " + session.getAttribute("adm_no"));
             session.invalidate();
-            System.out.println("session clear after: " + session.getAttribute("adm_no"));
+System.out.println("session clear after: " + session.getAttribute("adm_no"));
             
             res.sendRedirect(req.getContextPath()+"/backend/login.jsp");
 

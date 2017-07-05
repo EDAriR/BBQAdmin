@@ -1,6 +1,5 @@
 package com.admin.model;
 
-import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +14,7 @@ public class Admin_AuthorityJDBCDAO implements Admin_AuthorityDAO_interface {
     // 查詢資料
     private static final String GET_ALL_STMT = "SELECT * FROM admin_authority";
     private static final String GET_BY_ADM_NO_STMT = "SELECT * FROM admin_authority WHERE adm_no = ?";
+    private static final String GET_BY_AUTH_NO = "SELECT * FROM admin_authority WHERE auth_no = ?";
     // 刪除資料
     private static final String DELETE_ADMIN_AUTHORITY = "DELETE FROM admin_authority WHERE adm_no = ? AND auth_no = ?";
 
