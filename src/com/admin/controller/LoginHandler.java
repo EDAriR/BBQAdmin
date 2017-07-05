@@ -1,8 +1,5 @@
-package login;
+package com.admin.controller;
 
-import java.io.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
 import javax.servlet.annotation.WebServlet;
 
 @WebServlet("/loginhandler")

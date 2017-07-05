@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="Big5" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page import="com.admin.model.*" %>
 <%@ page import="com.admin.controller.SerialNumGenerator" %>
+<%@ page import="com.admin.model.*" %>
 <%
     AdminVO adminVO = (AdminVO) request.getAttribute("adminVO");
     SerialNumGenerator sng = new SerialNumGenerator();
@@ -16,7 +16,8 @@
     <!--external css  ICON-->
     <link href="<%=request.getContextPath()%>/backend/assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/backend/assets/css/zabuto_calendar.css">
-    <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/backend/assets/js/gritter/css/jquery.gritter.css"/>
+    <link rel="stylesheet" type="text/css"
+          href="<%=request.getContextPath()%>/backend/assets/js/gritter/css/jquery.gritter.css"/>
     <link rel="stylesheet" type="text/css" href="<%=request.getContextPath()%>/backend/assets/lineicons/style.css">
     <link href="<%=request.getContextPath()%>/backend/assets/css/style-responsive.css" rel="stylesheet">
     <link href="<%=request.getContextPath()%>/backend/assets/css/table-responsive.css" rel="stylesheet">
@@ -232,7 +233,8 @@
 <!-- js placed at the end of the document so the pages load faster -->
 <script src="<%=request.getContextPath()%>/backend/assets/js/jquery.js"></script>
 <script src="<%=request.getContextPath()%>/backend/assets/js/bootstrap.min.js"></script>
-<script class="include" type="text/javascript" src="<%=request.getContextPath()%>/backend/assets/js/jquery.dcjqaccordion.2.7.js"></script>
+<script class="include" type="text/javascript"
+        src="<%=request.getContextPath()%>/backend/assets/js/jquery.dcjqaccordion.2.7.js"></script>
 <script src="<%=request.getContextPath()%>/backend/assets/js/jquery.scrollTo.min.js"></script>
 <script src="<%=request.getContextPath()%>/backend/assets/js/jquery.nicescroll.js" type="text/javascript"></script>
 <!--common script for all pages ¦@¥ÎJS-->

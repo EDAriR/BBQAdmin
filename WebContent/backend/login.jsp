@@ -54,6 +54,7 @@ MAIN CONTENT
                 <button class="btn btn-theme btn-block" href="index.html" type="submit">
                     <i class="fa fa-lock"></i> SIGN IN
                 </button>
+                <input type="submit" value="µn¤J">
                 <input type="hidden" name="action" value="login">
 
             </div>

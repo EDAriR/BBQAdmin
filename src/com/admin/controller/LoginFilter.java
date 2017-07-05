@@ -1,8 +1,4 @@
-package filters;
-
-import java.io.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
+package com.admin.controller;
 
 public class LoginFilter implements Filter {
 
