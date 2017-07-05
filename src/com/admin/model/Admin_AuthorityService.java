@@ -7,9 +7,7 @@ public class Admin_AuthorityService {
 
     private Admin_AuthorityDAO_interface dao;
 
-    public Admin_AuthorityService() {
-        dao = new Admin_AuthorityDAO();
-    }
+    public Admin_AuthorityService() { dao = new Admin_AuthorityDAO(); }
 
     public Admin_AuthorityVO addChat_Friend(String adm_no, String auth_no) {
 
@@ -26,11 +24,11 @@ public class Admin_AuthorityService {
         dao.delete(adm_no, auth_no);
     }
 
-    public Admin_AuthorityVO getByAuthNo(String auth_no) { return dao.findByPrimaryKey(String adm_no, String auth_no); }
+    public Admin_AuthorityVO getByPk(String adm_no,String auth_no) { return dao.findByPrimaryKey(adm_no, auth_no); }
 
-    public List<Admin_AuthorityVO> getByAuthNo(String auth_no) { return dao.findByAuthNo(auth_no); }
+    public List<Admin_AuthorityVO> getByAdminNo(String auth_no) { return dao.findByAuthNo(auth_no); }
 
-    public List<Admin_AuthorityVO> getByAuthNo(String auth_no) { return dao.findByAdmNo(adm_no); }
+    public List<Admin_AuthorityVO> getByAuthNo(String adm_no) { return dao.findByAdmNo(adm_no); }
 
     public List<Admin_AuthorityVO> getAll() {
         return dao.getAll();

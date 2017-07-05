@@ -127,7 +127,7 @@ public class Admin_AuthorityDAO implements Admin_AuthorityDAO_interface {
 
             con = ds.getConnection();
             pstmt = con.prepareStatement(GET_BY_ADM_NO_STMT);
-            pstmt.setString(1, adm_no());
+            pstmt.setString(1, adm_no);
             rs = pstmt.executeQuery();
 
             while (rs.next()) {
@@ -168,7 +168,7 @@ public class Admin_AuthorityDAO implements Admin_AuthorityDAO_interface {
     @Override
     public List<Admin_AuthorityVO> findByAuthNo(String auth_no) {
 
-        pstmt.setString(1, adm_acct);
+        
 
         List<Admin_AuthorityVO> list = new ArrayList<Admin_AuthorityVO>();
         Admin_AuthorityVO admin_authorityVO = null;
@@ -180,7 +180,7 @@ public class Admin_AuthorityDAO implements Admin_AuthorityDAO_interface {
 
             con = ds.getConnection();
             pstmt = con.prepareStatement(GET_BY_AUTH_NO);
-            pstmt.setString(1, adm_no());
+            pstmt.setString(1, auth_no);
             rs = pstmt.executeQuery();
 
             while (rs.next()) {
