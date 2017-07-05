@@ -188,7 +188,7 @@
                                            name="adm_acct" placeholder="email@example.com"
                                            value="<%= (adminVO==null)? "aaa@xxx.com" : adminVO.getAdm_mail()%>">
                                 </div>
-                                <button type="button" class="btn btn-round btn-primary">Primary</button>
+                                <button type="button" class="btn btn-round btn-primary">°e¥X·s¼W</button>
                             </div>
                         </form>
                     </div>
