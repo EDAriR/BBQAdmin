@@ -30,6 +30,10 @@ public class adminServlet extends HttpServlet {
         String action = req.getParameter("action");
         HttpSession session = req.getSession();
 
+//        session.setAttribute("adminVO", adminVO);
+//        session.setAttribute("adm_no", adminVO.getAdm_no());
+//        session.setAttribute("adm_name", adminVO.getAdm_name());
+
 
         if ("login".equals(action)) {
             System.out.println("login \"action\" in ADC : " + action);
@@ -75,7 +79,7 @@ public class adminServlet extends HttpServlet {
                 session.setAttribute("adm_name", adminVO.getAdm_name());
 
                 String url = "/backend/index.jsp";
-                System.out.println("adminVOVO: " + adminVO + "\n" + "url: " + url);
+                System.out.println("adminVO: " + adminVO + "\n" + "url: " + url);
                 RequestDispatcher successView = req.getRequestDispatcher(url);
                 successView.forward(req, res);
 
