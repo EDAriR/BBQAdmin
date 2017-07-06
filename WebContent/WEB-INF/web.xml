@@ -30,7 +30,7 @@
     </servlet-mapping>
 
  <!--<filter>-->
-   <filter>
+<!--    <filter>
         <filter-name>LoginFilter</filter-name>
         <filter-class>com.admin.controller.LoginFilter</filter-class>
     </filter>
@@ -41,7 +41,7 @@
 		    <dispatcher>FORWARD</dispatcher>
 		    <dispatcher>INCLUDE</dispatcher>
 		    <dispatcher>ERROR</dispatcher>
-    </filter-mapping>
+    </filter-mapping> -->
     <!--<filter>-->
 
 </web-app>
